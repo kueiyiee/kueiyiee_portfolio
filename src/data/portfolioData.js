@@ -264,7 +264,7 @@ export const projects = [
     codeUrl: 'https://github.com/kueiyiee/ShareIT-Premium-Suite-Ultra.git',
     demoUrl: '',
     screenshot:
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+      'https://i.postimg.cc/nrGfQJf4/5942933161169849726.jpg',
   },
   {
     name: 'Secure Exam Browser',
