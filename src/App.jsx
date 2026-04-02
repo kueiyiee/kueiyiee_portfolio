@@ -101,7 +101,7 @@ export default function App() {
         transition={{ duration: 0.45 }}
       >
         <Sidebar profile={profile} onJump={jumpTo} />
-        <Navbar theme={theme} onToggleTheme={toggleTheme} profile={profile} />
+        <Navbar theme={theme} onToggleTheme={toggleTheme} profile={profile} onJump={jumpTo} />
 
         <Suspense fallback={<LoadingScreen />}>
           <About content={aboutText} />

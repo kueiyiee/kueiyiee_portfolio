@@ -17,7 +17,7 @@ import {
   FaUser,
 } from 'react-icons/fa';
 
-export default function Navbar({ theme, onToggleTheme, profile }) {
+export default function Navbar({ theme, onToggleTheme, profile, onJump }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const menuWrapperRef = useRef(null);
@@ -72,7 +72,9 @@ export default function Navbar({ theme, onToggleTheme, profile }) {
   }, []);
 
   const jumpAndClose = (sectionId) => {
-    onJump(sectionId);
+    if (typeof onJump === 'function') {
+      onJump(sectionId);
+    }
     setIsMenuOpen(false);
   };
 
@@ -156,7 +158,7 @@ export default function Navbar({ theme, onToggleTheme, profile }) {
         },
       },
     ],
-    [onToggleTheme, profile?.resumeUrl, theme]
+    [onJump, onToggleTheme, profile?.resumeUrl, theme]
   );
 
   return (
@@ -200,7 +202,11 @@ export default function Navbar({ theme, onToggleTheme, profile }) {
                 transition={{ duration: 0.22, ease: [0.2, 0.8, 0.2, 1] }}
                 className="absolute top-[3.35rem] right-0 w-[min(92vw,340px)] rounded-3xl border border-white/40 dark:border-white/10 bg-white/72 dark:bg-slate-950/70 shadow-[0_28px_70px_rgba(2,6,23,0.25)] backdrop-blur-2xl overflow-hidden"
               >
-                <div className="p-4 border-b border-slate-200/70 dark:border-slate-800/80 bg-gradient-to-br from-cyan-500/12 via-blue-500/8 to-transparent">
+                <button
+                  type="button"
+                  onClick={() => jumpAndClose('about')}
+                  className="w-full p-4 border-b border-slate-200/70 dark:border-slate-800/80 bg-gradient-to-br from-cyan-500/12 via-blue-500/8 to-transparent text-left"
+                >
                   <div className="flex items-center gap-3">
                     <img
                       src={profile.heroImage}
@@ -212,7 +218,7 @@ export default function Navbar({ theme, onToggleTheme, profile }) {
                       <p className="text-xs text-slate-600 dark:text-slate-400 truncate">{profile.role}</p>
                     </div>
                   </div>
-                </div>
+                </button>
 
                 <div className="p-2.5">
                   {menuItems.map((item, index) => {
