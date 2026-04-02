@@ -29,7 +29,7 @@ export const profile = {
   heroImage: 'https://i.postimg.cc/gkBqXP2Q/kpk.jpg',
   tagline: 'Building secure, scalable systems and solving real-world problems through code.',
   location: 'Dilla, Ethiopia',
-  emailPrimary: 'kueiyiee@gmail.com',
+  emailPrimary: 'kuei.poch@du.edu.et,
   emailSecondary: 'kuei.poch@du.edu.et',
   phone: '+251937910246',
   website: 'https://kueiyiee.tech',
