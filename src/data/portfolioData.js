@@ -64,7 +64,7 @@ export const experience = [
 ];
 
 export const aboutText =
-  'I am a 4th-year Computer Science student at Dilla University, building a strong foundation in full-stack engineering and scalable system design. I focus on high-performance, user-centered applications with clean architecture, reliability, and long-term scalability. Driven by a product mindset, I build real-world solutions that bridge ideas and execution through disciplined engineering and continuous learning.';
+  'I am a 3rd-year Computer Science student at Dilla University, building a strong foundation in full-stack engineering and scalable system design. I focus on high-performance, user-centered applications with clean architecture, reliability, and long-term scalability. Driven by a product mindset, I build real-world solutions that bridge ideas and execution through disciplined engineering and continuous learning.';
 
 export const education = [
   {
