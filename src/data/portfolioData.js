@@ -35,7 +35,7 @@ export const profile = {
   website: 'https://kueiyiee.tech',
   linkedin: 'https://linkedin.com/in/kueiyiee',
   github: 'https://github.com/kueiyiee',
-  resumeUrl: 'https://drive.google.com/file/d/1zqT0zD9GVC80ndGtH-uvggalj7nbEO_M/view?usp=drivesdk',
+  resumeUrl: 'https://drive.google.com/file/d/1NkPPwQCtxZCFFq31ekMq5PctuLtxydUP/view?usp=drivesdk',
 };
 
 export const navItems = [
